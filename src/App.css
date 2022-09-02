@@ -1,0 +1,159 @@
+/* bottom angle */
+.custom-shape-divider-bottom-1662058999 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  padding:0;
+}
+
+.custom-shape-divider-bottom-1662058999 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 161px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1662058999 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/* top angle */
+.custom-shape-divider-top-1662058812 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1662058812 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 161px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1662058812 .shape-fill {
+  fill: #FFFFFF;
+}
+
+div.container-fluid{
+  font-weight: bold;
+  padding:0px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+.hero .row{
+  /* position: relative;
+  z-index:1999; */
+  width:100vw;
+  height:100vh;
+}
+
+.about{
+  height:110vh;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: white; */
+}
+.abouticons{
+  height:100%;
+  width:100%;
+  padding:1rem;
+  margin:2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work, .letters, .profile,.worflow, .contact{
+  height:fit-content;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: relative;
+  z-index:1999; */
+}
+.about-heading{
+  text-align: right;
+  /* padding-left: 200px; */
+}
+
+div hr{
+  opacity: 1;
+  padding:2px;
+  width:7em;
+  color:black;
+  background-color:black;
+}
+
+.letterquote{
+  height:40vh;;
+  width:40%;
+  text-align: center;
+}
+.letterquote h1:hover + p{
+  visibility: hidden;
+  background-color: black;
+}
+.profile, p, h6{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work , p, h6{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.letters h6{
+  text-align: left;
+  display: flex;
+  align-items:left;
+  justify-content: left;
+}
+.letters p {
+  font-family: "Platin Light",;
+}
+.work  h6:hover+ p{
+  height:fit-content;
+  width:fit-content;
+  position:relative;
+  animation: mymove 2s;
+  background-color: #000;
+}
+.showbtn button{
+  visibility: hidden;
+  color:#87C6BD;
+  margin-bottom:20px;
+  border:none;
+  background-color: #fff;
+}
+.showbtn:hover button{
+  visibility: visible;
+}
+@keyframes mymove {
+  from {bottom: 0px;}
+  to {bottom: 25px;}
+}
+
+.contact{
+  padding-bottom:147px;
+}
+div.contact.row{
+  height:100%;
+}
+
+.workflow > .col {
+  position: relative;
+  z-index:1999;
+  padding:10vh;
+}
