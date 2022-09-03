@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container,Row, Col, Button} from 'react-bootstrap';
-import {AiOutlineTwitter, AiOutlineGithub, AiOutlineCodepen, AiOutlineMedium} from 'react-icons/ai';
+import {AiOutlineTwitter, AiOutlineMinus, AiOutlineGithub, AiOutlineCodepen, AiOutlineMedium} from 'react-icons/ai';
 import{ FaLinkedinIn, FaXing } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import './App.css';
@@ -8,11 +8,18 @@ import './App.css';
 function App() {
   return (
     <>
-    <IconContext.Provider value={{color:'black', size:'2.5rem'}}>
+    {/* loadout */}
+    {/* <Container fluid className='loadout'>
+        <h1 className='logo'>logo</h1>
+    </Container> */}
+
+
+    <IconContext.Provider value={{color:'#87C6BD', size:'2.5rem'}}>
       <Container fluid>
           <Row>
             <Col style={{padding:'0'}}>
-            <Container fluid style={{backgroundColor:'#f3f3f3'}} className='hero'>
+                {/* section one */}
+               <Container fluid style={{backgroundColor:'#f3f3f3'}} className='hero'>
               <Row>
                 <Col>
                     <div>
@@ -31,13 +38,15 @@ function App() {
                         <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
                       </svg>
                     </div> */}
-                </Container>
-
-            <Container fluid='lg'>
+                 </Container>
+                            {/* section two */}
+                    <Container fluid='lg'>
                 <Row className='about '>
         <Col>
-        <h1 style={{fontSize:'4rem', fontWeight:'700', letterSpacing: '1.2rem',display:'flex', alignItems:'center', justifyContent:'center'}}>GEMS</h1>
-        <div  style={{display:'flex', alignItems:'center', justifyContent:'center', margin:'2.5rem 0'}}><hr /></div>
+        <div className='centerdiv'>
+          <h1>GEMS</h1>
+        </div>
+        <div  className='centerdiv'><hr /></div>
         <Row className='abouticons'>
           <Col  className='abouticons'><img src='/imgs/treeicon.png' alt='tree icon'/></Col>
           <Col  className='abouticons'><img src='/imgs/watericon.png' alt='tree icon'/></Col>
@@ -72,9 +81,9 @@ function App() {
         </Row>
         </Col>
                 </Row>
-              </Container>
-
-              <Container fluid style={{backgroundColor:'#f3f3f3'}} >
+                    </Container>
+                            {/* section three */}
+                        <Container fluid style={{backgroundColor:'#f3f3f3'}} >
               <div class="custom-shape-divider-top-1662058812" style={{position:'relative'}}>
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
@@ -83,8 +92,10 @@ function App() {
               <Container fluid='lg'>
                   <Row className='work'>
         <Col>
-          <h1 style={{fontSize:'4rem', fontWeight:'700', letterSpacing: '1.2rem',display:'flex', alignItems:'center', justifyContent:'center'}}>WORK</h1>
-          <div  style={{display:'flex', alignItems:'center', justifyContent:'center'}}><hr /></div>
+        <div className='sectionheadings'>
+            <div className='centerdiv'> <h1>WORK</h1> </div>
+            <div  className='centerdiv'> <hr /> </div>
+          </div>
         <Row>
         <Col>
           <div>
@@ -131,18 +142,18 @@ function App() {
                           <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
                         </svg>
                       </div>
-                </Container>
-
-                <Container fluid='lg'>
+                        </Container>
+                             {/* section four */}
+                            <Container fluid='lg'>
                   <Row className='letters'>
                     <Col>
                       <Row>
-        <h1 style={{fontSize:'4rem', fontWeight:'700', letterSpacing: '1.2rem',display:'flex', alignItems:'center', justifyContent:'center'}}>LETTERS</h1>
-        <div  style={{display:'flex', alignItems:'center', justifyContent:'center', margin:'2.5rem 0'}}><hr /></div>
-        <Col  style={{width:'100%', height:'100%', display:'flex', alignItems:'center', justifyContent:'center',backgroundColor: '#F3F3F3'}}>
+                        <div className='centerdiv'> <h1>LETTERS</h1></div>
+                           <div  className='centerdiv' style={{marginBottom:'3rem'}}><hr /></div>
+        <Col  className='centerdiv' style={{backgroundColor: '#F3F3F3'}}>
           <div className='letterquote'>
-            "<p style={{color:'#87C6BD', fontSize:'12px', }}>Creative management</p>
-              <h1 >LET ME BE YOUR RUBBER DUCK</h1>
+            "<p style={{color:'#87C6BD', fontSize:'12px', }}>Creative management<p style={{color:'black'}}>"LET ME BE YOUR RUBBER DUCK"</p></p>
+              
             "
           </div>
         </Col>
@@ -153,14 +164,14 @@ function App() {
             <p style={{fontSIze:'16px'}}>Finding themselves at the end of the production chain, developers tend to turn into slow and
               frustrated beasts.
             </p>
-              <button>Read More </button>
+              <button><AiOutlineMinus  className='btnarrow'/>Read More </button>
               </div>
               <div className='showbtn'>
             <h6>UX DESIGN / PROTOTYPE</h6>
             <h3>A two level menu approach for mobile</h3>
             <p>Recently I've worked on a pretty complexe information architecture.Tryout a prototype I've 
               created for the mobile version of menu.</p>
-              <button>Read More </button>
+              <button><AiOutlineMinus  className='btnarrow'/>Read More </button>
               </div>
         </Col>
         <Col>
@@ -169,21 +180,21 @@ function App() {
             <h3>Pull-to-Return-A new interaction pattern ?</h3>
             <p>Recently I stumbled upon feedly's design rework and I've found a pretty neat interaction
                I'd love to share with you as a prototype</p>
-               <button>Read More </button>
+               <button> <AiOutlineMinus className='btnarrow'/> Read More </button>
                </div>
                <div className='showbtn'>
                <h6>UX DESIGN / DEVELOPMENT </h6>
                <h3>Navigation - Released as a jQuery Plugin</h3>
                <p>The navigation of medium.com examined, enhanced and published as a jQuery plungin</p>
-               <button>Read More </button>
+               <button><AiOutlineMinus /> Read More </button>
                </div>
            </Col>
                        </Row>
                       </Col>
                   </Row>
-                </Container>
-
-      <Container fluid style={{backgroundColor:'#f3f3f3'}} >
+                            </Container>
+                              {/* section five */}
+                          <Container fluid style={{backgroundColor:'#f3f3f3'}} >
         <div class="custom-shape-divider-top-1662058812" style={{position:'relative'}}>
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
@@ -192,9 +203,11 @@ function App() {
           <Container fluid='lg'>
       <Row className='profile'>
         <Col>
-        <h1 style={{fontSize:'4rem', fontWeight:'700', letterSpacing: '1.2rem',display:'flex', alignItems:'center', justifyContent:'center', }}>PROFILE</h1>
-          <div  style={{display:'flex', alignItems:'center', justifyContent:'center', margin:'2.5rem 0'}}><hr /></div>
-        <div style={{width:'100%', display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'1rem'}}>
+        <div className='sectionheadings'>
+        <div className='centerdiv'> <h1>PROFILE</h1> </div>
+          <div className='centerdiv'> <hr /> </div>
+          </div>
+        <div style={{width:'100%', display:'flex', alignItems:'center', justifyContent:'center', margin:'3rem 0'}}>
         <p style={{width:'700px'}}>During my studies of Multimedia at the University of Applied Sciences in Augsburg, Germany, I
           adopted a greater sense for the correlation of design and design and technology and ever since I 
           create digital products with knowledge and care.
@@ -237,66 +250,66 @@ function App() {
            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
         </svg>
       </div>
-      </Container>
-
-      <Container fluid='lg'>
-          <Row className='workflow'>
-        <Col>
-        
-          <h1 style={{fontSize:'4rem', fontWeight:'700', letterSpacing: '1.2rem',display:'flex', alignItems:'center', justifyContent:'center'}}>WORKFLOW</h1>
-          <div  style={{display:'flex', alignItems:'center', justifyContent:'center', margin:'2.5rem 0'}}><hr /></div>
-          <div style={{width:'100%', height:'100%',display:'flex', alignItems:'center', justifyContent:'center'}}>
-            <Col >
-            <div style={{width:'100%', height:'100%',display:'flex', alignItems:'center', justifyContent:'center'}}>
-              <p style={{ width:'400px', display:'inline-block', fontSize:'1.6rem',  textAlign:'center'}}>
-                I <a href='#disabled' style={{color:'#87C6BD', textDecoration:'none', pointer:'none'}} disable='true'>tackle </a> 
-                a broaed variety of disciplines in the <a href='#disabled' style={{color:'black'}}>agile process</a>,  of creating meaningful products</p>
-              </div>
-              <img src='/imgs/workflow.png' alt='/' style={{width:'100%', height:'100%',display:'flex', alignItems:'center', justifyContent:'center'}}/>
-              <ul style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
-                <li style={{ paddingRight:'7rem'}}>Research</li>
-                <li  style={{marginRight:'7rem'}}>Product Design</li>
-                <li  style={{marginRight:'7rem'}}>UX Design & Prototyping</li>
-                <li  style={{marginRight:'7rem'}}>UI Design</li>
-                <li  style={{marginRight:'7rem'}}>Development</li>
-                <li  style={{marginRight:'7rem'}}>Delievery</li>
-              </ul>
-             </Col>
-          </div>
-          </Col>
+                          </Container>
+                        {/*  section six */}
+                      <Container fluid='lg'>
+                          <Row className='workflow'>
+                           <Col>
+                             <div style={{display:'flex', alignItems:'center', justifyContent:'center'}}> <h1>WORKFLOW</h1> </div>
+                              <div style={{display:'flex', alignItems:'center', justifyContent:'center'}}><hr /> </div>
+                                <div className='centerdiv'>
+                                  <Col >
+                                    <div className='centerdiv'>
+                                      <p style={{ width:'400px', display:'inline-block', fontSize:'1.6rem',  textAlign:'center'}}>
+                                        I <a href='#disabled' style={{color:'#87C6BD', textDecoration:'none', pointer:'none'}} disable='true'>tackle </a> 
+                                        a broaed variety of disciplines in the <a href='#disabled' style={{color:'black'}}>agile process</a>,  of creating meaningful products</p>
+                                    </div>
+                                    <img src='/imgs/workflow.png' alt='/' style={{width:'100%', height:'100%',display:'flex', alignItems:'center', justifyContent:'center'}}/>
+                                    <ul style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
+                                      <li style={{ paddingRight:'7rem'}}>Research</li>
+                                        <li  style={{marginRight:'7rem'}}>Product Design</li>
+                                        <li  style={{marginRight:'7rem'}}>UX Design & Prototyping</li>
+                                    <li  style={{marginRight:'7rem'}}>UI Design</li>
+                                  <li  style={{marginRight:'7rem'}}>Development</li>
+                                <li  style={{marginRight:'7rem'}}>Delievery</li>
+                              </ul>
+                            </Col>
+                          </div>
+                        </Col>
+                      </Row>
+                    </Container>
+                    {/* section seven */}
+                <Container fluid style={{backgroundColor:'#f3f3f3'}}>
+                   <div class="custom-shape-divider-top-1662058812" style={{position:'relative'}}>
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                        </svg>
+                    </div>
+                  <Container fluid='lg'>
+                  <Row className='contact'>
+                    <Col>
+                      <div className='centerdiv'> <h1>CONTACT</h1></div>
+                        <div className='centerdiv'><hr /></div>
+                          <h6 style={{ marginTop:'3rem', fontSize:'1.7rem', display:'flex', alignItems:'center', justifyContent:'center'}}>
+                            <a href='/' style={{color:'black', fontWeight:'bold'}}>info@weaintplastic.com</a></h6>
+                                <div style={{display:'flex', alignItems:'center', justifyContent:'center',margin:'3rem 0px'}}>
+                                  <AiOutlineTwitter style={{marginRight:'30px', backgroundColor:'black', borderRadius:'10rem', color:'white'}}/>
+                                   <AiOutlineCodepen style={{marginRight:'30px',  backgroundColor:'black', borderRadius:'10rem', color:'white'}} />
+                                     <AiOutlineGithub style={{marginRight:'30px', color:'black'}} />
+                                        <AiOutlineMedium style={{marginRight:'30px',  backgroundColor:'black', borderRadius:'10rem', color:'white'}}/>
+                                    <FaLinkedinIn style={{ marginRight:'30px', backgroundColor:'black', borderRadius:'10rem', color:'white'}}/>
+                                <FaXing style={{ marginRight:'30px', backgroundColor:'black', borderRadius:'10rem', color:'white'}}/>
+                            </div>
+                          <div className='centerdiv'>
+                        <Button variant='outline' style={{marginTop:'6rem'}}>IMPRINT</Button>
+                      </div>
+                    </Col>
+                  </Row>
+                </Container>
+              </Container>
+            </Col>
           </Row>
-        </Container>
-
-        <Container fluid style={{backgroundColor:'#f3f3f3'}}>
-          <div class="custom-shape-divider-top-1662058812" style={{position:'relative'}}>
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-            </svg>
-          </div>
-              <Container fluid='lg'>
-        <Row className='contact'>
-          <Col>
-          <h1 style={{fontSize:'4rem', fontWeight:'700', letterSpacing: '1.2rem',display:'flex', alignItems:'center', justifyContent:'center',}}>CONTACT</h1>
-          <div  style={{display:'flex', alignItems:'center', justifyContent:'center', margin:'2.5rem 0 5rem '}}><hr /></div>
-            <h6 style={{fontSize:'1.7rem', display:'flex', alignItems:'center', justifyContent:'center'}}><a href='/' style={{color:'black', fontWeight:'bold'}}>info@weaintplastic.com</a></h6>
-            <div style={{display:'flex', alignItems:'center', justifyContent:'center',margin:'3rem 0px'}}>
-              <AiOutlineTwitter style={{marginRight:'30px', backgroundColor:'black', borderRadius:'10rem', color:'white'}}/>
-              <AiOutlineCodepen style={{marginRight:'30px',  backgroundColor:'black', borderRadius:'10rem', color:'white'}} />
-              <AiOutlineGithub style={{marginRight:'30px'}} />
-              <AiOutlineMedium style={{marginRight:'30px',  backgroundColor:'black', borderRadius:'10rem', color:'white'}}/>
-              <FaLinkedinIn style={{ marginRight:'30px', backgroundColor:'black', borderRadius:'10rem', color:'white'}}/>
-              <FaXing style={{ marginRight:'30px', backgroundColor:'black', borderRadius:'10rem', color:'white'}}/>
-            </div>
-            <div style={{marginTop:'6rem',display:'flex', alignItems:'center', justifyContent:'center', width:'100%'}}>
-          <Button variant='outline'>IMPRINT</Button>
-          </div>
-          </Col>
-        </Row>
-          </Container>
-          </Container>
-              </Col>
-            </Row>
-          </Container> 
+        </Container> 
       </IconContext.Provider>
     </>
   )

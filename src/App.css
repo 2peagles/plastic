@@ -1,4 +1,43 @@
-/* bottom angle */
+@keyframes slideuploadout {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-100%);
+  }
+}
+
+.loadout{
+  color:#fff;
+  height:100vh;
+  width:100vw;
+  position:absolute;
+  position: fixed;
+  z-index: 1;
+  background-color: rgb(42, 41, 41);
+  animation: slideuploadout 2s;
+}
+
+/* @keyframes logoaniamate {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+} */
+
+.logo{
+  height:100vh;
+  width:100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: logoaniamate 2s;
+}
+
+/* bottom background angle */
 .custom-shape-divider-bottom-1662058999 {
   position: absolute;
   bottom: 0;
@@ -22,7 +61,7 @@
   fill: #FFFFFF;
 }
 
-/* top angle */
+/* top background angle */
 .custom-shape-divider-top-1662058812 {
   position: absolute;
   top: 0;
@@ -44,11 +83,59 @@
   fill: #FFFFFF;
 }
 
+/* typewriter animation */
+@keyframes typewriter {
+  to {
+    left:100%;
+  }
+}
+.about h1 , .work h1, .letters h1, .profile h1, .workflow h1, .contact  h1 {
+  font-size:4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.3rem;
+  position: relative;
+  width:max-content;
+  /* font-family: "Source Code Pro", monospace; */
+}
+
+ .work h1::before,.profile h1::before, .contact  h1::before{
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:#f3f3f3;
+  animation: typewriter 3s steps(13) 1s forwards;
+}
+.about h1::before, .letters h1::before, .workflow h1::before{
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:#fff;
+  animation: typewriter 3s steps(15) 1s forwards;
+}
+
+.centerdiv{
+  height:100%;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 div.container-fluid{
   font-weight: bold;
   padding:0px;
   font-family: 'Lexend Deca', sans-serif;
 }
+
 .hero .row{
   /* position: relative;
   z-index:1999; */
@@ -57,7 +144,7 @@ div.container-fluid{
 }
 
 .about{
-  height:110vh;
+  /* height:110vh; */
   width:100%;
   display: flex;
   align-items: center;
@@ -79,8 +166,6 @@ div.container-fluid{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* position: relative;
-  z-index:1999; */
 }
 .about-heading{
   text-align: right;
@@ -123,13 +208,28 @@ div hr{
 .letters p {
   font-family: "Platin Light",;
 }
-.work  h6:hover+ p{
+.work  h6:hover + p{
   height:fit-content;
   width:fit-content;
   position:relative;
-  animation: mymove 2s;
-  background-color: #000;
+  transform: translateY(130%);
+  animation: 2s ease-out 0s  1 slideup;
+  /* animation: slideuploadout 2s; */
+  /* background-color: #000; */
 }
+
+@keyframes slideup {
+  0% {
+    transform: translateY(130%);
+  }
+  50% {
+    transform: translateY(130%);
+  }
+  50% {
+    transform: translateY(-130%);
+  }
+}
+
 .showbtn button{
   visibility: hidden;
   color:#87C6BD;
@@ -139,10 +239,6 @@ div hr{
 }
 .showbtn:hover button{
   visibility: visible;
-}
-@keyframes mymove {
-  from {bottom: 0px;}
-  to {bottom: 25px;}
 }
 
 .contact{
@@ -156,4 +252,24 @@ div.contact.row{
   position: relative;
   z-index:1999;
   padding:10vh;
+}
+
+hr{
+  animation: 1s ease-in-out 0s 1 slidesidesout;
+}
+
+@keyframes slidesidesout {
+  0% {
+    transform: translateX(130%);
+  }
+  50%{
+    transform: translateX(130%);
+  }
+  50%{
+    transform: translateX(-130%);
+  }
+}
+
+.sectionheadings{
+  margin-bottom:4rem;
 }
