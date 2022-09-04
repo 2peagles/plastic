@@ -9,9 +9,9 @@ function App() {
   return (
     <>
     {/* loadout */}
-    {/* <Container fluid className='loadout'>
-        <h1 className='logo'>logo</h1>
-    </Container> */}
+    <Container fluid className='loadout'>
+        <h1 className='logo'>we ain't plastic</h1>
+    </Container>
 
 
     <IconContext.Provider value={{color:'#87C6BD', size:'2.5rem'}}>
@@ -20,11 +20,11 @@ function App() {
             <Col style={{padding:'0'}}>
                 {/* section one */}
                <Container fluid style={{backgroundColor:'#f3f3f3'}} className='hero'>
-              <Row>
-                <Col>
+                <Row>
+                  <Col>
                     <div>
-                      <p style={{fontSize:'2rem'}}>we aint plastic</p>
-                        <img src='/imgs/rock.png'alt=''/>
+                      <p className='pagelogo'>we ain't plastic</p>
+                        <div className='centerdiv rockimg '><img src='/imgs/rock.png'alt=''/></div>
                       </div>                   
                   </Col>
                   <div class="custom-shape-divider-bottom-1662058999"  style={{position:'relative'}}>
@@ -41,158 +41,157 @@ function App() {
                  </Container>
                             {/* section two */}
                     <Container fluid='lg'>
-                <Row className='about '>
-        <Col>
-        <div className='centerdiv'>
-          <h1>GEMS</h1>
-        </div>
-        <div  className='centerdiv'><hr /></div>
-        <Row className='abouticons'>
-          <Col  className='abouticons'><img src='/imgs/treeicon.png' alt='tree icon'/></Col>
-          <Col  className='abouticons'><img src='/imgs/watericon.png' alt='tree icon'/></Col>
-          <Col  className='abouticons'><img src='/imgs/windicon.png' alt='tree icon'/></Col>
-          <Col  className='abouticons'><img src='/imgs/mountainicon.png' alt='tree icon'/></Col>
-          <Col  className='abouticons'><img src='/imgs/leaficon.png' alt='tree icon'/></Col>
-        </Row>
-        <Row>
-          <Col >
-            <h4 className='about-heading'>Hello, I'm Roland. Creative Technologist & User Experience Engineer based in Berlin - I 
-                  create digital products with knowledge and passion.</h4></Col>
-          <Col >
-            <p>With more than a decade of experience I tackle a broad variety of disciplines in process 
-                   of creating meaningful products that make a real difference. With carefully selected tools and
-                  skills I express my visions ranging from product design to the creation of user experience up to 
-                  development and delivery. </p>
-             <p>My distinctive strategic thinking helps me to pinpoint the holistic scope of a product and
-              evolve in by adding new business ideas, innovations and values that meet user needs as well as
-              business objectives.Besides building user flows, information architecture and wireframes, 
-              tailor-made interactive prototypes are constantly
-             </p>
-            </Col>
-          <Col>
-          <p>putting concepts and ideas to the test and emphasize the user-centered approach in my work.
-            I work with the lastest techniques in web development and my agile workflow is the result of the 
-            preciselycombined tool and strategies that include object oriented patterns, build scripts, pre-processors 
-            and minification, source code management, testing as well as deployment. </p>
-            <p>With my knowledge in both design and technology I foster productive teams in an collabrative
-              of environment that meets the requirements of creatives and developers at the same time.
-            </p>
-          </Col>
-        </Row>
-        </Col>
-                </Row>
+                      <Row className='about '>
+                        <Col>
+                          <div className='centerdiv'>
+                            <h1>GEMS</h1>
+                          </div>
+                          <div  className='centerdiv'><hr /></div>
+                            <Row className='abouticons'>
+                              <Col  className='abouticons'><img src='/imgs/treeicon.png' alt='tree icon'/></Col>
+                              <Col  className='abouticons'><img src='/imgs/watericon.png' alt='tree icon'/></Col>
+                              <Col  className='abouticons'><img src='/imgs/windicon.png' alt='tree icon'/></Col>
+                              <Col  className='abouticons'><img src='/imgs/mountainicon.png' alt='tree icon'/></Col>
+                              <Col  className='abouticons'><img src='/imgs/leaficon.png' alt='tree icon'/></Col>
+                            </Row>
+                            <Row>
+                              <Col >
+                                  <h4 className='about-heading'>Hello, I'm Roland. Creative Technologist & User Experience Engineer based in Berlin - I 
+                                  create digital products with knowledge and passion.</h4></Col>
+                              <Col >
+                                  <p>With more than a decade of experience I tackle a broad variety of disciplines in process 
+                                          of creating meaningful products that make a real difference. With carefully selected tools and
+                                           skills I express my visions ranging from product design to the creation of user experience up to 
+                                          development and delivery. </p>
+                                   <p>My distinctive strategic thinking helps me to pinpoint the holistic scope of a product and
+                                          evolve in by adding new business ideas, innovations and values that meet user needs as well as
+                                          business objectives.Besides building user flows, information architecture and wireframes, 
+                                        tailor-made interactive prototypes are constantly
+                                </p>
+                              </Col>
+                            <Col>
+                                  <p>putting concepts and ideas to the test and emphasize the user-centered approach in my work.
+                                         I work with the lastest techniques in web development and my agile workflow is the result of the 
+                                          preciselycombined tool and strategies that include object oriented patterns, build scripts, pre-processors 
+                                          and minification, source code management, testing as well as deployment. </p>
+                                    <p>With my knowledge in both design and technology I foster productive teams in an collabrative
+                                          of environment that meets the requirements of creatives and developers at the same time.
+                                </p>
+                            </Col>
+                         </Row>
+                        </Col>
+                      </Row>
                     </Container>
+
                             {/* section three */}
                         <Container fluid style={{backgroundColor:'#f3f3f3'}} >
-              <div class="custom-shape-divider-top-1662058812" style={{position:'relative'}}>
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-            </svg>
-          </div>
-              <Container fluid='lg'>
-                  <Row className='work'>
-        <Col>
-        <div className='sectionheadings'>
-            <div className='centerdiv'> <h1>WORK</h1> </div>
-            <div  className='centerdiv'> <hr /> </div>
-          </div>
-        <Row>
-        <Col>
-          <div>
-            <h6 style={{fontSize:'2rem'}}>Expedia Meeting Market</h6>
-            <p style={{color:'#87C6BD', fontSize:'1rem'}}>Onboarding</p>
-          </div>
-          <div>
-            <h6 style={{fontSize:'2rem'}}>Atomic</h6>
-            <p style={{color:'#87C6BD', fontSize:'1rem'}}>Relaunch</p>
-          </div>
-          <div>
-            <h6 style={{fontSize:'2rem'}}>Melanie Daveid</h6>
-            <p style={{color:'#87C6BD', fontSize:'1rem'}}>Portolio</p>
-          </div>
-          <div >
-            <h6 style={{fontSize:'2rem'}}>Austria Summer Moments</h6>
-            <p style={{color:'#87C6BD', fontSize:'1rem'}}>Global Campagin Website</p>
-          </div>
-        </Col>
-        <Col >
-        <div>
-            <h6 style={{fontSize:'2rem'}}>Row Low </h6>
-            <p style={{color:'#87C6BD', fontSize:'1rem'}}>Frontend Framework</p>
-          </div>
-          <div>
-            <h6 style={{fontSize:'2rem'}}>Digging in the crates</h6>
-            <p style={{color:'#87C6BD', fontSize:'1rem'}}>interactive Installation</p>
-          </div>
-          <div>
-            <h6 style={{fontSize:'2rem'}}>Infinity Car Configurator</h6>
-            <p style={{color:'#87C6BD', fontSize:'1rem'}}>Proof of Concept</p>
-          </div>
-          <div>
-            <h6 style={{fontSize:'2rem'}}>Web Fundamentals</h6>
-            <p style={{color:'#87C6BD', fontSize:'1rem'}}>Field Guide</p>
-          </div>
-        </Col>
-        </Row>
-        </Col>
-                </Row>
-                </Container>
-                       <div class="custom-shape-divider-bottom-1662058999"  style={{position:'relative'}}>
-                         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-                        </svg>
-                      </div>
+                          <div class="custom-shape-divider-top-1662058812" style={{position:'relative'}}>
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                            </svg>
+                          </div>
+                          <Container fluid='lg'>
+                              <Row className='work'>
+                                <Col>
+                                  <div className='sectionheadings'>
+                                    <div className='centerdiv'> <h1>WORK</h1> </div>
+                                  <div  className='centerdiv'> <hr /> </div>
+                              </div>
+                              <Row>
+                              <Col>
+                                <div>
+                                    <h6 style={{fontSize:'2rem'}}>Expedia Meeting Market</h6>
+                                    <p style={{color:'#87C6BD', fontSize:'1rem'}}>Onboarding</p>
+                              </div>
+                                <div>
+                                  <h6 style={{fontSize:'2rem'}}>Atomic</h6>
+                                    <p style={{color:'#87C6BD', fontSize:'1rem'}}>Relaunch</p>
+                              </div>
+                                  <div>
+                                    <h6 style={{fontSize:'2rem'}}>Melanie Daveid</h6>
+                                       <p style={{color:'#87C6BD', fontSize:'1rem'}}>Portolio</p>
+                                      </div>
+                                      <div >
+                                        <h6 style={{fontSize:'2rem'}}>Austria Summer Moments</h6>
+                                        <p style={{color:'#87C6BD', fontSize:'1rem'}}>Global Campagin Website</p>
+                                      </div>
+                                    </Col>
+                                    <Col >
+                                        <div>
+                                        <h6 style={{fontSize:'2rem'}}>Row Low </h6>
+                                        <p style={{color:'#87C6BD', fontSize:'1rem'}}>Frontend Framework</p>
+                                      </div>
+                                      <div>
+                                        <h6 style={{fontSize:'2rem'}}>Digging in the crates</h6>
+                                        <p style={{color:'#87C6BD', fontSize:'1rem'}}>interactive Installation</p>
+                                      </div>
+                                      <div>
+                                         <h6 style={{fontSize:'2rem'}}>Infinity Car Configurator</h6>
+                                        <p style={{color:'#87C6BD', fontSize:'1rem'}}>Proof of Concept</p>
+                                      </div>
+                                      <div>
+                                        <h6 style={{fontSize:'2rem'}}>Web Fundamentals</h6>
+                                         <p style={{color:'#87C6BD', fontSize:'1rem'}}>Field Guide</p>
+                                      </div>
+                                    </Col>
+                                  </Row>
+                                </Col>
+                              </Row>
+                              </Container>
+                              <div class="custom-shape-divider-bottom-1662058999"  style={{position:'relative'}}>
+                              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                           </svg>
+                          </div>
                         </Container>
+
                              {/* section four */}
                             <Container fluid='lg'>
-                  <Row className='letters'>
-                    <Col>
-                      <Row>
-                        <div className='centerdiv'> <h1>LETTERS</h1></div>
-                           <div  className='centerdiv' style={{marginBottom:'3rem'}}><hr /></div>
-        <Col  className='centerdiv' style={{backgroundColor: '#F3F3F3'}}>
-          <div className='letterquote'>
-            "<p style={{color:'#87C6BD', fontSize:'12px', }}>Creative management<p style={{color:'black'}}>"LET ME BE YOUR RUBBER DUCK"</p></p>
-              
-            "
-          </div>
-        </Col>
-        <Col >
-        <div className='showbtn'>
-        <h6 style={{fontSIze:'12px'}}>Workflow Management</h6>
-          <h3 style={{fontSIze:'24px'}}>Developers ain't slow</h3>
-            <p style={{fontSIze:'16px'}}>Finding themselves at the end of the production chain, developers tend to turn into slow and
-              frustrated beasts.
-            </p>
-              <button><AiOutlineMinus  className='btnarrow'/>Read More </button>
-              </div>
-              <div className='showbtn'>
-            <h6>UX DESIGN / PROTOTYPE</h6>
-            <h3>A two level menu approach for mobile</h3>
-            <p>Recently I've worked on a pretty complexe information architecture.Tryout a prototype I've 
-              created for the mobile version of menu.</p>
-              <button><AiOutlineMinus  className='btnarrow'/>Read More </button>
-              </div>
-        </Col>
-        <Col>
-          <div className='showbtn'>
-            <h6>UX DESIGN / PROTOTYPE</h6>
-            <h3>Pull-to-Return-A new interaction pattern ?</h3>
-            <p>Recently I stumbled upon feedly's design rework and I've found a pretty neat interaction
-               I'd love to share with you as a prototype</p>
-               <button> <AiOutlineMinus className='btnarrow'/> Read More </button>
-               </div>
-               <div className='showbtn'>
-               <h6>UX DESIGN / DEVELOPMENT </h6>
-               <h3>Navigation - Released as a jQuery Plugin</h3>
-               <p>The navigation of medium.com examined, enhanced and published as a jQuery plungin</p>
-               <button><AiOutlineMinus /> Read More </button>
-               </div>
-           </Col>
-                       </Row>
-                      </Col>
-                  </Row>
+                              <Row className='letters'>
+                                <Col>
+                                  <Row>
+                                    <div className='centerdiv'> <h1>LETTERS</h1></div>
+                                    <div  className='centerdiv' style={{marginBottom:'3rem'}}><hr /></div>
+                                      <Col  className='centerdiv' style={{backgroundColor: '#F3F3F3'}}>
+                                        <div className=' letterquote centerdiv'>
+                                          <h2 className=' parenthover'>LET ME BE YOUR RUBBER DUCK</h2>
+                                          </div>
+                                          </Col>
+                                        <Col >
+                                          <div className='showbtn'>
+                                             <h6 style={{fontSIze:'12px'}}>Workflow Management</h6>
+                                              <h3 style={{fontSIze:'24px'}}>Developers ain't slow</h3>
+                                                <p style={{fontSIze:'16px'}}>Finding themselves at the end of the production chain, developers tend to turn into slow and frustrated beasts.  </p>
+                                              <button className='letterbtn'><AiOutlineMinus  className='btnarrow'/>Read More </button>
+                                            </div>
+                                          <div className='showbtn'>
+                            <h6>UX DESIGN / PROTOTYPE</h6>
+                            <h3>A two level menu approach for mobile</h3>
+                            <p>Recently I've worked on a pretty complexe information architecture.Tryout a prototype I've 
+                            created for the mobile version of menu.</p>
+                          <button><AiOutlineMinus  className='btnarrow'/>Read More </button>
+                                        </div>
+                                      </Col>
+                                    <Col>
+                            <div className='showbtn'>
+                              <h6>UX DESIGN / PROTOTYPE</h6>
+                                <h3>Pull-to-Return-A new interaction pattern ?</h3>
+                                    <p>Recently I stumbled upon feedly's design rework and I've found a pretty neat interaction
+                                    I'd love to share with you as a prototype</p>
+                                      <button> <AiOutlineMinus className='btnarrow'/> Read More </button>
+                                  </div>
+                                 <div className='showbtn'>
+                                  <h6>UX DESIGN / DEVELOPMENT </h6>
+                                    <h3>Navigation - Released as a jQuery Plugin</h3>
+                                     <p>The navigation of medium.com examined, enhanced and published as a jQuery plungin</p>
+                                    <button><AiOutlineMinus /> Read More </button>
+                                </div>
+                                   </Col>
+                                  </Row>
+                                </Col>
+                              </Row>
                             </Container>
+
                               {/* section five */}
                           <Container fluid style={{backgroundColor:'#f3f3f3'}} >
         <div class="custom-shape-divider-top-1662058812" style={{position:'relative'}}>
@@ -251,6 +250,7 @@ function App() {
         </svg>
       </div>
                           </Container>
+
                         {/*  section six */}
                       <Container fluid='lg'>
                           <Row className='workflow'>
@@ -264,8 +264,8 @@ function App() {
                                         I <a href='#disabled' style={{color:'#87C6BD', textDecoration:'none', pointer:'none'}} disable='true'>tackle </a> 
                                         a broaed variety of disciplines in the <a href='#disabled' style={{color:'black'}}>agile process</a>,  of creating meaningful products</p>
                                     </div>
-                                    <img src='/imgs/workflow.png' alt='/' style={{width:'100%', height:'100%',display:'flex', alignItems:'center', justifyContent:'center'}}/>
-                                    <ul style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
+                                    <img src='/imgs/workflow.png' alt='/' className='centerdiv'/>
+                                    <ul className='centerdiv'>
                                       <li style={{ paddingRight:'7rem'}}>Research</li>
                                         <li  style={{marginRight:'7rem'}}>Product Design</li>
                                         <li  style={{marginRight:'7rem'}}>UX Design & Prototyping</li>
@@ -278,6 +278,7 @@ function App() {
                         </Col>
                       </Row>
                     </Container>
+
                     {/* section seven */}
                 <Container fluid style={{backgroundColor:'#f3f3f3'}}>
                    <div class="custom-shape-divider-top-1662058812" style={{position:'relative'}}>

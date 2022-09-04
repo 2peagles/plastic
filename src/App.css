@@ -13,9 +13,9 @@
   width:100vw;
   position:absolute;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   background-color: rgb(42, 41, 41);
-  animation: slideuploadout 2s;
+  animation:  slideuploadout 5s forwards;
 }
 
 /* @keyframes logoaniamate {
@@ -29,12 +29,34 @@
 
 .logo{
   height:100vh;
-  width:100vw;
+  width:100vw; 
+  font-size: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  animation: logoaniamate 2s;
+  text-transform: uppercase;
+  /* animation: typewriter 3s steps(16) 1s forwards; */
+}
+
+.logo::before{
+  content: '';
+  height: 20px;
+  width:3px;
+  top:450px;
+  position:absolute;
+  transform:rotateZ(20deg);
+  background-color: #fff;
+}
+
+.logo::after{
+  content: '';
+  height:20px;
+  width:3px;
+  bottom:450px;
+  position: absolute;
+  transform:rotateZ(20deg);
+  background-color: #fff;
 }
 
 /* bottom background angle */
@@ -142,9 +164,38 @@ div.container-fluid{
   width:100vw;
   height:100vh;
 }
+.pagelogo{
+  position: relative;
+  top:55px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.pagelogo::before{
+  content: '';
+  height:20px;
+  width:3px;
+  top:50px;
+  position:absolute;
+  transform:rotateZ(20deg);
+  background-color: black;
+}
 
+.pagelogo::after{
+  content: '';
+  height:20px;
+  width:3px;
+  bottom:50px;
+  position: absolute;
+  transform:rotateZ(20deg);
+  background-color: black;
+}
+.rockimg{
+  position: absolute;
+  bottom:-260px;
+  z-index: 1;
+}
 .about{
-  /* height:110vh; */
+  height:110vh;
   width:100%;
   display: flex;
   align-items: center;
@@ -180,15 +231,59 @@ div hr{
   background-color:black;
 }
 
-.letterquote{
-  height:40vh;;
-  width:40%;
+.letterquote {
+  height:40vh;
+  width:200px;
   text-align: center;
+  position: relative;
 }
-.letterquote h1:hover + p{
-  visibility: hidden;
-  background-color: black;
+.letterquote::before{
+  content:' " ';
+  position: absolute;
+  top:50px;
 }
+.letterquote::after{
+  content:' " ';
+  position: absolute;
+  bottom:50px;
+}
+ .parenthover{
+  color:black;
+  position: relative;
+  font-size: 40px;
+  width:20vw;
+  font-weight: bold;
+}
+
+.parenthover::before {
+  content:' creative management ';
+  position: relative;
+  display: block;
+  font-size:20px;
+  color:#87C6BD;
+  padding:10px 0px;
+  font-weight: normal;
+}
+
+.parenthover:hover::before{
+  content: '';
+}
+
+.showbtn{
+  padding:15px 0px;
+}
+.showbtn button{
+  display: none;
+  color:#87C6BD;
+  /* margin-bottom:20px; */
+  border:none;
+  background-color: #fff;
+}
+.showbtn:hover button{
+  /* visibility: visible; */
+  display: block;
+}
+
 .profile, p, h6{
   display: flex;
   align-items: center;
@@ -230,17 +325,6 @@ div hr{
   }
 }
 
-.showbtn button{
-  visibility: hidden;
-  color:#87C6BD;
-  margin-bottom:20px;
-  border:none;
-  background-color: #fff;
-}
-.showbtn:hover button{
-  visibility: visible;
-}
-
 .contact{
   padding-bottom:147px;
 }
@@ -250,7 +334,7 @@ div.contact.row{
 
 .workflow > .col {
   position: relative;
-  z-index:1999;
+  z-index:1;
   padding:10vh;
 }
 
