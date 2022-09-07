@@ -15,7 +15,7 @@
   position: fixed;
   z-index: 2;
   background-color: rgb(42, 41, 41);
-  animation:  slideuploadout 5s forwards;
+  animation:  slideuploadout 3s forwards;
 }
 
 /* @keyframes logoaniamate {
